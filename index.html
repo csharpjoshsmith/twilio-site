@@ -3,11 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Twilio Setup Page</title>
+  <title>SMS Consent Page</title>
 </head>
 <body>
-  <h1>Hello!</h1>
-  <p>This is a placeholder site for setting up my Twilio account.</p>
-  <p>Contact: youremail@example.com</p>
+  <h1>Subscribe for SMS Updates</h1>
+  <p>Enter your phone number to receive updates via text message from our team.</p>
+
+  <form>
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone" required><br><br>
+
+    <input type="checkbox" id="consent" name="consent" required>
+    <label for="consent">
+      I agree to receive SMS updates from C Sharp Josh Smith. Message and data rates may apply. Text STOP to unsubscribe at any time.
+    </label><br><br>
+
+    <input type="submit" value="Subscribe">
+  </form>
+
+  <p>This form is for demonstration purposes only. No messages will be sent from this page.</p>
 </body>
 </html>
+
+Added SMS opt-in form with consent
